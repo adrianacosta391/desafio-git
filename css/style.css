@@ -131,6 +131,142 @@ section {
 
 /* Fin sobre nosotros */
 
+
+/* animacion */
+
+div.anima-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  .anima-item {
+    color: #ff0000;
+    animation-name: focus-in-expand-top;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+     
+  }
+  @keyframes focus-in-expand-top {
+    0%{
+      letter-spacing: -.5em;
+      transform: translateY(-300px);
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100%{
+      transform: translateY(0);
+      filter: blur(0);
+      opacity: 1;
+    }
+  }
+
+  div.animaimg-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  .animaimg-item {
+    width: 100px;
+    height: 100px;
+    background-color:#ffe672;
+    animation-name: slit-in-horizontal;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    
+  }
+  @keyframes slit-in-horizontal {
+    0%{
+      transform: translateZ(-800px) rotateX(90deg);
+      opacity: 0;
+    }
+    50%{
+      transform: translateZ(-160px) rotateX(87deg);
+      opacity: 1;
+    }
+    100%{
+      transform: translateZ(0) rotateX(0);
+    }
+  }
+
+  div.animainfi-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  .animainfi-item {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    background-color:#ff0000;
+    animation-name: vibrate-fast;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    
+  }
+  @keyframes vibrate-fast {
+    0%{
+      transform: translate(0);
+    }
+    10%{
+      transform: translate(-2px,-2px);
+    }
+    20%{
+      transform: translate(2px,-2px);
+    }
+    30%{
+      transform: translate(-2px,2px);
+    }
+    40%{
+      transform: translate(2px,2px);
+    }
+    50%{
+      transform: translate(-2px,-2px);
+    }
+    60%{
+      transform: translate(2px,-2px);
+    }
+    70%{
+      transform: translate(-2px,2px);
+    }
+    80%{
+      transform: translate(-2px,-2px);
+    }
+    90%{
+      transform: translate(2px,-2px);
+    }
+    100%{
+      transform: translate(0);
+    }
+  }
+
+
+
+
+.animaciones {
+
+    margin-bottom: 150px;
+}
+
+
+
+
+/* fin animacion */
+
 footer {
 
     background-color: rgb(0, 0, 0);
